@@ -14,7 +14,7 @@
   <body class="bg-success-subtle">
     <div class="container mt-5">
       <h2>Welcome to the Cloud</h2>
-      <form>
+      <form class="needs-validation" action="" novalidate>
         <div class="mb-3">
           <label for="username" class="form-label">Username</label>
           <input
@@ -24,6 +24,8 @@
             id="username"
             placeholder="Username"
           />
+          <div class="valid-feedback">Username is Valid</div>
+          <div class="invalid-feedback">Username is Invalid</div>
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">Email address</label>
@@ -34,6 +36,8 @@
             id="email"
             placeholder="name@example.com"
           />
+          <div class="valid-feedback">E-mail is Valid</div>
+          <div class="invalid-feedback">E-mail is Invalid</div>
         </div>
         <div class="mb-3">
           <label for="password" class="form-label">Password</label>
@@ -44,6 +48,8 @@
             id="password"
             placeholder="Password"
           />
+          <div class="valid-feedback">Password is Valid</div>
+          <div class="invalid-feedback">Password is Invalid</div>
         </div>
         <div class="mb-3">
           <label for="confirmPassword" class="form-label"
@@ -56,10 +62,12 @@
             id="confirmPassword"
             placeholder="Confirm Password"
           />
+          <div class="valid-feedback">Confirm password is Valid</div>
+          <div class="invalid-feedback">Confirm password is Invalid</div>
         </div>
         <button
           onclick="openLogin(event)"
-          type="button"
+          type="submit"
           class="btn btn-primary"
         >
           Register
@@ -72,11 +80,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script>
-      function openLogin(event) {
-        event.preventDefault(); // Prevent form submission
-        window.location.href = "./login.html";
-      }
-    </script>
+    <script src="JS/main.js"></script>
   </body>
 </html>

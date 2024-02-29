@@ -14,13 +14,14 @@
   <body class="bg-primary-subtle">
     <div class="container mt-5">
       <h2>User Login</h2>
-      <form class="" method="post" novalidate>
+      <form action="" class="needs-validation" novalidate>
         <div class="mb-3">
           <label for="emailLogin" class="form-label">Email address</label>
           <input
+            placeholder="Enter your email"
             required
             type="email"
-            class="form-control is-valid"
+            class="form-control"
             id="emailLogin"
           />
           <div class="valid-feedback">Looks Good</div>
@@ -31,7 +32,7 @@
           <input
             required
             type="password"
-            class="form-control is-valid"
+            class="form-control"
             id="passwordLogin"
             placeholder="Password"
           />
@@ -47,5 +48,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="JS/main.js"></script>
   </body>
 </html>
