@@ -14,24 +14,29 @@
   <body class="bg-primary-subtle">
     <div class="container mt-5">
       <h2>User Login</h2>
-      <form>
+      <form class="" method="post" novalidate>
         <div class="mb-3">
           <label for="emailLogin" class="form-label">Email address</label>
           <input
+            required
             type="email"
-            class="form-control"
+            class="form-control is-valid"
             id="emailLogin"
-            placeholder="name@example.com"
           />
+          <div class="valid-feedback">Looks Good</div>
+          <div class="invalid-feedback">Please Check Your E-mail</div>
         </div>
         <div class="mb-3">
           <label for="passwordLogin" class="form-label">Password</label>
           <input
+            required
             type="password"
-            class="form-control"
+            class="form-control is-valid"
             id="passwordLogin"
             placeholder="Password"
           />
+          <div class="valid-feedback">Looks Good</div>
+          <div class="invalid-feedback">Please Check Your Password</div>
         </div>
         <button type="submit" class="btn btn-primary">Login</button>
         <a class="btn btn-outline-success" href="index.html">Register</a>
