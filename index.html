@@ -11,9 +11,9 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="bg-success-subtle">
     <div class="container mt-5">
-      <h2>Registration Form</h2>
+      <h2>Welcome to the Cloud</h2>
       <form>
         <div class="mb-3">
           <label for="username" class="form-label">Username</label>
@@ -53,7 +53,10 @@
             placeholder="Confirm Password"
           />
         </div>
-        <button type="submit" class="btn btn-primary">Register</button>
+        <button onclick="openLogin" type="submit" class="btn btn-primary">
+          Register
+        </button>
+        <a class="btn btn-outline-danger px-3" href="login.html">Login</a>
       </form>
     </div>
     <script
@@ -61,5 +64,10 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function openLogin() {
+        window.Location.href = "./login.html";
+      }
+    </script>
   </body>
 </html>
