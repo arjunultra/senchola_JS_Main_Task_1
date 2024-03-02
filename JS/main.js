@@ -20,3 +20,8 @@
     );
   });
 })();
+// link to login todo
+function openTodoApp(event) {
+  event.preventDefault();
+  window.location.href = "todo.html";
+}
