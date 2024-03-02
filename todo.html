@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css" />
+  </head>
+  <body class="">
+    <div class="container-fluid display-1 bg-warning bg-gradient">
+      <h1 class="display-1 text-center">Todo List</h1>
+      <div class="container d-flex gap-1 pb-5">
+        <input class="form-control" type="text" name="input" id="input" />
+        <button id="add-btn" class="btn btn-lg bg-dark text-light py-1 px-4">
+          Add
+        </button>
+      </div>
+    </div>
+    <div
+      id="list"
+      class="list-container bg-primary text-light text-uppercase border border-3 border-dark vstack-center"
+    ></div>
+    <script type="module" src="./JS/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./JS/todo.js"></script>
+  </body>
+</html>
