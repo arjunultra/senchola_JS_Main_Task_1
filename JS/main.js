@@ -1,3 +1,4 @@
+// script.js
 (() => {
   "use strict";
 
@@ -12,6 +13,8 @@
         if (!form.checkValidity()) {
           event.preventDefault();
           event.stopPropagation();
+        } else {
+          openTodoApp(event); // Call openTodoApp only if form is valid
         }
 
         form.classList.add("was-validated");
@@ -19,9 +22,10 @@
       false
     );
   });
+
+  // link to login todo
+  function openTodoApp(event) {
+    event.preventDefault();
+    window.location.href = "todo.html";
+  }
 })();
-// link to login todo
-function openTodoApp(event) {
-  event.preventDefault();
-  window.location.href = "todo.html";
-}
